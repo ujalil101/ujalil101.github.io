@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+    
+    
     <head>
         <title>Usman's Website</title>
         <link rel="stylesheet" href="styles.css">
@@ -8,6 +10,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet"> 
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
         
     </head>
 
@@ -15,7 +19,7 @@
         <div class="background">  <!--Background Image-->
             <div class="blur"> <!--Background Image is Blurred-->
                 <div class="IntroText">  <!--Basic Intro Info-->
-                    <h1>Usman Jalil</h1> 
+                    <h1 class="name anim-typewriter">Usman Jalil</h1>
                     <p>Computer Engineering Student @ Boston University</p> 
                     <p>Aspiring Software Engineer</p>
                     <div class="Buttons">
@@ -25,25 +29,42 @@
                     </div>
                     <div id="NavBar">
                         <nav>
-                            <a href="#"><img src="Images/DownArrow.svg"style="width:20px; height:20px;"/></a>
+                            <a href="#sec-2"><img src="Images/DownArrow.svg"style="width:25px; height:25px;"/></a>
                         </nav>
                     </div>
-                    
                 </div>
             </div>
         </div>
     <!--Other websection-->
-        <div class="Info">
-            <div class="TextArea" id="one">
-                <h1>About Me</h1>
-                <p>Hello! My name is Usman Jalil. I am a second year Computer Engineering student at Boston University.  </p>
-                
+    <section id="sec-2">
+       <div class="container">
+            <div class="box">
+                <div class="icon"><i class="fa fa-user-circle-o" aria-hidden="true">
+                </i></div>
+                <div class="content">
+                    <h3>About Me</h3>
+                    <p1>Hello World! My name is Usman, but everyone calls me Uzi. I am a second year student 
+                        studying Computer Engineering with an intention of concentrating in Technology Innovation and or 
+                        Machine Learning at Boston University. I have been programing since my junior year of high school where I took AP C.S. 
+                        Everyday I look forward towards honing the necessary experince towards 
+                        becoming a better software engineer. I plan on becoming a better 
+                        critical thinker as well as an effective team member in technical projects.  
+                    </p1>
+                </div>
             </div>
-           
+       </div>
+       <div class="container-2">
+            <div class="box-2">
+                <div class="icon"><i class="fa fa-user-circle-o" aria-hidden="true">
+                </i></div>
             </div>
-        </div>
+            <div class="box-2">
+                <div class="icon"><i class="fa fa-user-circle-o" aria-hidden="true">
+                </i></div>
 
-    
-         
+            </div>
+
+       </div>
+    </section>
     </body>
 </html>
