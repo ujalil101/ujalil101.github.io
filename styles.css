@@ -193,6 +193,10 @@ body {
     font-size: 18px;
     color: #525f7f; 
 }
+/*Error occurs after this for some reason. I think its with height being set with 100vh. All of my elements are 
+structured behind this height being set to 100vh. changing it will cause other elements jumble and over lap. 
+idk what to do??? 
+*/
 .container-2 {
     position: relative;
     width: 100%;
@@ -241,6 +245,7 @@ body {
  .container-2 .box-2:hover .icon .fa {
      font-size: 40px;
  }
+ 
  .container-2 .box-2 .content { 
     position: absolute;
     top: 100%;
