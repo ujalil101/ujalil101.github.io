@@ -122,9 +122,11 @@ body {
 }
 .container {
     position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 .container .box {
     position: relative;
@@ -135,8 +137,7 @@ body {
     justify-content: center;
     box-sizing: border-box;
     border-radius: 8px;
-    left: 170px;
-    top: 50px;
+    flex-direction: column;
  }
  .container .box .icon {
      position: absolute;
@@ -193,15 +194,13 @@ body {
     font-size: 18px;
     color: #525f7f; 
 }
-/*Error occurs after this for some reason. I think its with height being set with 100vh. All of my elements are 
-structured behind this height being set to 100vh. changing it will cause other elements jumble and over lap. 
-idk what to do??? 
-*/
 .container-2 {
     position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: 240px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 .container-2 .box-2{
     position: relative;
@@ -209,11 +208,11 @@ idk what to do???
     height: calc(500px);
     background: white;
     float: left;
-    margin: 10px;
-    top: -620px;
-    left: 210px;
+    margin: 50px;
     justify-content: center;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
     border-radius: 8px;
  }
  .container-2 .box-2 .icon {
@@ -245,7 +244,6 @@ idk what to do???
  .container-2 .box-2:hover .icon .fa {
      font-size: 40px;
  }
- 
  .container-2 .box-2 .content { 
     position: absolute;
     top: 100%;
@@ -311,21 +309,21 @@ idk what to do???
 }
 .container-3 {
     position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: 240px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 .container-3 .box-3{
     position: relative;
     width: calc(490px);
     height: calc(280px);
     background: white;
-    float: left;
-    margin: 10px;
-    top: -1120px;
-    left: 210px;
+    margin: 50px;
     justify-content: center;
     box-sizing: border-box;
+    flex-direction: row;
     border-radius: 8px;
  } 
  .container-3 .box-3 .icon {
