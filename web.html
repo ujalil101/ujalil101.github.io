@@ -21,8 +21,29 @@
                     <div class="Buttons">
                          <a href="https://github.com/ujalil101"><span></span><img src="Images/Github.svg"style="width:20px; height:20px;" /></a>
                          <a href="https://www.linkedin.com/in/usman-jalil-309500201/"><span></span><img src="Images/Linkedin.svg"style="width:20px; height:20px;" /></a>
-                         <a href="mailto:ujalil929@gmail.com"><span></span><img src="Images/Email.svg"style="width:20px; height:20px;" /></a>
+                         <a href="mailto:ujalil929@gmail.com"><span></span><img src="Images/Email.svg"style="width:20px; height:20px;" /></a>   
                     </div>
+                    <div class="music" onclick="PlayMusic()"><i class="fa fa-volume-up fa-lg" aria-hidden="true"></i></div>
+                    <div class="hide">If you couldn't tell The Batman is my current 
+                        fav movie! </div>
+                    <div id="hideme">  <!--Used to hide the default audio control settings-->
+                        <audio controls id="mus">
+                            <source src="Sounds/Batman.mp3">
+                        </audio>
+                         <!--Used .js to onlick pause and play background song -->
+                            <script type="text/javascript">
+                                function PlayMusic(){
+                                    var myAudio = document.getElementById("mus");
+                                    myAudio.controls = false;
+                                    if(myAudio.paused) {
+                                        myAudio.play();
+                                    }
+                                    else {
+                                        myAudio.pause();
+                                    }
+                                }
+                            </script>  
+                        </div>
                     <div id="NavBar">
                         <nav>
                             <a href="#sec-2"><img src="Images/DownArrow.svg"style="width:25px; height:25px;"/></a>
@@ -55,13 +76,16 @@
                 </i></div>
                 <div class="content">
                     <h3>My Skills</h3>
-                    <p1> As a programmer, I have experience in creating applications with the following langauges: </p1>
+                    <p1> As a programmer, I have experience in creating applications with the following langauges/technologies: </p1>
                     <ul style="list-style: none;">
                         <li>C/C++</li>
                         <li>Java</li>
                         <li>Python</li>
                         <li>HTML/CSS</li>
                         <li>Javascript</li>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        
                     </ul>
                 </div>
             </div>
@@ -144,13 +168,7 @@
             <div class="bottom">
                 <p>© 2022 Usman Jalil</p>
               </div>
-              
-        
         </div>
-        
-        
-        
-        
     </section>
     </body>
 </html>
