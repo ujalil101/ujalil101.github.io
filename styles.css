@@ -95,6 +95,35 @@ body {
 .Buttons a:hover {
     color: black;
 }
+.music {
+    margin: 20px;
+    background: transparent;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    cursor: pointer;
+}
+.hide {
+    display: none;
+    color: white;
+    font-size: 11px;
+}
+ .fa {
+    color: white;
+}
+ .music:hover + .hide {
+    display: block;
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+
+}
+/* hides audio display*/
+#hideme {
+    display: none;
+}
 
 #NavBar {
     width:100%;
