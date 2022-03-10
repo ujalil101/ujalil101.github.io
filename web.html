@@ -4,14 +4,18 @@
         <title>Usman's Website</title>
         <link rel="shortcut icon" type="image/png" href="Images/favicon-32x32.png"/>
         <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Saira Condensed Font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet"> 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>  
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/> 
+        
+        
     </head>
     <body>
+        <script src="main.js"></script>
         <div class="background">  <!--Background Image-->
             <div class="blur"> <!--Background Image is Blurred-->
                 <div class="IntroText">  <!--Basic Intro Info-->
@@ -25,7 +29,7 @@
                     </div>
                     <div class="music" onclick="PlayMusic()"><i class="fa fa-volume-up fa-lg" aria-hidden="true"></i></div>
                     <div class="hide">If you couldn't tell The Batman is my current 
-                        fav movie! </div>
+                        fav movie! Click to play and pause! </div>
                     <div id="hideme">  <!--Used to hide the default audio control settings-->
                         <audio controls id="mus">
                             <source src="Sounds/Batman.mp3">
@@ -61,11 +65,12 @@
                 <div class="content">
                     <h3>About Me</h3>
                     <p1>Hello World! My name is Usman, but everyone calls me Uzi. I am a second year student 
-                        studying Computer Engineering with an intention of concentrating in Technology Innovation and or 
+                        studying Computer Engineering with an intention of concentrating in Technology Innovation and/or 
                         Machine Learning at Boston University. I have been programing since my junior year of high school where I took AP C.S. 
                         Everyday I look forward towards honing the necessary experience towards 
                         becoming a better software engineer. I plan on becoming a better 
-                        critical thinker as well as an effective team member in technical projects.  
+                        critical thinker as well as an effective team member in technical projects. I am currently studying abroad in Sydney, 
+                        Australia attending the University of Sydney. Alongside, I am interning as a software engineer @ Livelo: Your Global Bike. 
                     </p1>
                 </div>
             </div>
@@ -84,7 +89,6 @@
                         <li>HTML/CSS</li>
                         <li>Javascript</li>
                         <li>Git</li>
-                        <li>Docker</li>
                         
                     </ul>
                 </div>
@@ -129,7 +133,7 @@
                 <h3>Covid OutBreak Game</h3>
                 <p1>Developed a C++ game about the COVID-19 pandemic using OOP by creating various objects located in a 2D-grid that move in ways controlled by the user</p1>
                 <ul style="list-style: none;">
-                    <li>Additional info can be seen by hovering and clicking the icon.</li>
+                    <li>Additional info can be seen by <span class="link" onmouseenter="displayImg('Images/Game.png',this);" onmouseout="removeImg();">hovering</span> and/or clicking the icon.</li>
                 </ul>
                     <div class="btn">
                         <a href="https://github.com/ujalil101/Covid-OutBreak-Game"><span></span><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
@@ -144,7 +148,7 @@
                     <h3>Cubbies</h3>
                     <p1>Prototyped a python mobile application using the Kivy framework aimed to connect students in the same classes who are virtual due to COVID-19.
                     </p1>
-                    <div class="myDIV">Additional info can be seen by hovering and clicking the icon.</div>
+                    <div class="myDIV">Additional info can be seen by hovering and/or clicking the icons.</div>
                        <div class="hide">Fun Fact: this project won best use of DataStax Astra in UniHacks 2020 Hackathon!</div>
                         <div class="btn">
                             <a href="https://github.com/CJByrne44/CT-Boys-Submission"><span></span><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
@@ -172,4 +176,3 @@
     </section>
     </body>
 </html>
-
