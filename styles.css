@@ -17,23 +17,23 @@ body {
     width: 100%;
     background-color: black;
  }
-  .blur {
+.blur {
     background: rgba(255, 255, 255, 0.2); 
     backdrop-filter: blur(6px); 
     height: 100vh;
     width: 100%;
   }
-  .IntroText {
-      color: white;
-      padding-top: 350px;
-  }
-  .IntroText h1 {
+.IntroText {
+    color: white;
+    padding-top: 350px;
+}
+.IntroText h1 {
     text-align: center;
     font-weight: normal;
     font-size: 48px;
     position: center;
-  }
-  .name{
+}
+.name {
     position: relative;
     top: 50%;  
     width: 24em;
@@ -46,19 +46,19 @@ body {
     transform: translateY(-50%);    
 }
 /* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 1s steps(44) infinite normal;
+.anim-typewriter {
+    animation:  typewriter 4s steps(44) 1s 1 normal both,
+                blinkTextCursor 1s steps(44) infinite normal;
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 4em;}
+@keyframes typewriter {
+    from{width: 0;}
+    to{width: 4em;}
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+@keyframes blinkTextCursor {
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
 }
-  .IntroText p {
+.IntroText p {
     text-align: center;
     font-size: 24px;
     position: center;
@@ -74,7 +74,7 @@ body {
     filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0) brightness(1000%) contrast(1000%);  /*Changed color of github svg link to white
     https://codepen.io/sosuke/pen/Pjoqqp*/
 }
-.Buttons a{ 
+.Buttons a { 
     margin: 20px;
     width: 20px;
     position: relative;
@@ -111,7 +111,7 @@ body {
  .music .fa {
     color: white;
 }
- .music:hover + .hide {
+.music:hover + .hide {
     display: block;
     color: white;
     font-size: 12px;
@@ -123,8 +123,15 @@ body {
 /* hides audio display*/
 #hideme {
     display: none;
+    
 }
-
+#Quotes {
+    font-size: 20px;
+    margin: 80px;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+}
 #NavBar {
     width:100%;
     position: absolute;
@@ -132,20 +139,18 @@ body {
     text-align: center;
     filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0) brightness(1000%) contrast(1000%); 
 }
-
 @media screen and (max-width: 770px) {
-     .IntroText h1 {
+    .IntroText h1 {
         text-align: center;
         font-weight: normal;
         font-size: 24px;
         position: center;
-      }
+    }
     .Buttons a{ 
         display: block; 
         margin: 20px auto;
     }
 }
-
 #sec-2 {
     scroll-behavior: smooth;
 }
@@ -170,14 +175,14 @@ body {
     
  }
  .container .box .icon {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     transition: .5s;
-     z-index: 1;
-     background: #525f7f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 1;
+    background: #525f7f;
  }
  .container .box:hover .icon {
     top: 10px;
@@ -196,29 +201,29 @@ body {
     color: #fff;
  }
  .container .box:hover .icon .fa {
-     font-size: 40px;
+    font-size: 40px;
  }
  .container .box .content { 
-     position: absolute;
-     top: 100%;
-     height: calc(100% - 100px);
-     text-align: center;
-     padding: 20px;
-     box-sizing: border-box;
-     transition: 0.5s;
-     opacity: 0;
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
  }
  .container .box:hover .content {
-     top: 100px;
-     opacity: 1;
+    top: 100px;
+    opacity: 1;
  }
- .container .box .content h3{ 
+ .container .box .content h3 { 
     margin: 0 0 10px;
     padding: 0;
     font-size: 32px;
     color: #525f7f; 
 }
-.container .box .content p1{ 
+.container .box .content p { 
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -232,7 +237,7 @@ body {
     flex-direction: row;
     text-align: center;
 }
-.container-2 .box-2{
+.container-2 .box-2 {
     position: relative;
     width: calc(490px);
     height: calc(500px);
@@ -242,7 +247,6 @@ body {
     justify-content: center;
     box-sizing: border-box;
     display: flex;
-
     border-radius: 8px;
  }
  .container-2 .box-2 .icon {
@@ -288,19 +292,19 @@ body {
     top: 100px;
     opacity: 1;
 }
-.container-2 .box-2 .content h3{ 
+.container-2 .box-2 .content h3 { 
     margin: 0 0 10px;
     padding: 0;
     font-size: 32px;
     color: #525f7f; 
 }
-.container-2 .box-2 .content p1{ 
+.container-2 .box-2 .content p { 
     margin: 0;
     padding: 0;
     font-size: 18px;
     color: #525f7f; 
 }
-.container-2 .box-2 .content ul{  
+.container-2 .box-2 .content ul {  
     padding: 0;
     font-size: 18px;
     color: #525f7f; 
@@ -320,19 +324,19 @@ body {
     top: 100px;
     opacity: 1;
 }
-.container-2 .box-2 .content-2 h3{ 
+.container-2 .box-2 .content-2 h3 { 
     margin: 0 0 10px;
     padding: 0;
     font-size: 32px;
     color: #525f7f; 
 }
-.container-2 .box-2 .content-2 p1{ 
+.container-2 .box-2 .content-2 p { 
     margin: 0;
     padding: 0;
     font-size: 18px;
     color: #525f7f; 
 }
-.container-2 .box-2 .content-2 ul{  
+.container-2 .box-2 .content-2 ul {  
     padding: 0;
     font-size: 18px;
     color: #525f7f; 
@@ -398,13 +402,13 @@ body {
     top: 100px;
     opacity: 1;
 }
-.container-3 .box-3 .content-3 h3{ 
+.container-3 .box-3 .content-3 h3 { 
     margin: 0 0 10px;
     padding: 0;
     font-size: 28px;
     color: #525f7f; 
 }
-.container-3 .box-3 .content-3 p1{ 
+.container-3 .box-3 .content-3 p { 
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -426,19 +430,19 @@ body {
     top: 100px;
     opacity: 1;
 }
-.container-3 .box-3 .content-4 h3{ 
+.container-3 .box-3 .content-4 h3 { 
     margin: 0 0 10px;
     padding: 0;
     font-size: 28px;
     color: #525f7f; 
 }
-.container-3 .box-3 .content-4 p1{ 
+.container-3 .box-3 .content-4 p { 
     margin: 0;
     padding: 0;
     font-size: 16px;
     color: #525f7f; 
 }
-.container-3 .box-3 .content-4 ul{ 
+.container-3 .box-3 .content-4 ul { 
     margin: 0;
     padding: 0;
     font-size: 12px;
@@ -459,24 +463,24 @@ body {
     top: 100px;
     opacity: 1;
 }
-.container-3 .box-3 .content-5 h3{ 
+.container-3 .box-3 .content-5 h3 { 
     margin: 0 0 10px;
     padding: 0;
     font-size: 28px;
     text-align: center;
     color: #525f7f; 
 }
-.container-3 .box-3 .content-5 p1{ 
+.container-3 .box-3 .content-5 p { 
     margin: 0;
     padding: 0;
     font-size: 16px;
     color: #525f7f; 
 }
-.container-3 .btn{
+.container-3 .btn {
     margin: 10px;
     text-align: center;
 }
-.container-3 .btn a{ 
+.container-3 .btn a { 
     margin: 40px;
     width: 40px;
     height: 40px;
@@ -514,16 +518,15 @@ span.link {
     font-size: 12px;
 
   }
-.container-4{
+.container-4 {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
-   
 }
-.container-4 .box-4{
+.container-4 .box-4 { 
     position: relative;
     width: calc(1080px);
     height: calc(300px);
@@ -531,7 +534,6 @@ span.link {
     margin: 50px;
     justify-content: center;
     box-sizing: border-box;
-    
     border-radius: 8px;
  } 
  .container-4 .box-4 .icon {
@@ -577,30 +579,30 @@ span.link {
     top: 100px;
     opacity: 1;
 }
-.container-4 .box-4 .content-6 h1{ 
+.container-4 .box-4 .content-6 h1 { 
     margin: 0 0 10px;
     padding: 0;
     font-size: 32px;
     color: #525f7f; 
 }
-.container-4 .box-4 .content-6 p1{ 
+.container-4 .box-4 .content-6 p { 
     margin: 0;
     padding: 0;
     font-size: 18px;
     color: #525f7f; 
 }
-.container-4 .btn{
+.container-4 .btn {
     margin: 10px;
     text-align: center;
 }
-.container-4 .btn a{ 
+.container-4 .btn a { 
     margin: 40px;
     width: 40px;
     height: 40px;
     position: relative;
     color: #525f7f;
 }
-.container-4 .btn a span{ 
+.container-4 .btn a span { 
     width: 0%;
     height: 100%;
     position: absolute;
@@ -616,9 +618,14 @@ span.link {
 .container-4 .btn a:hover {
     color: #525f7f;
 }
-.bottom {
-    position: relative;
+.container-5 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
     left: 0;
     bottom: 0;
     color: white;
- }
+    align-items: center;
+    justify-content: center;
+    overscroll-behavior: none;
+  }
