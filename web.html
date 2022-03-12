@@ -11,11 +11,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet"> 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/> 
-        
-        
     </head>
     <body>
-        <script src="main.js"></script>
         <div class="background">  <!--Background Image-->
             <div class="blur"> <!--Background Image is Blurred-->
                 <div class="IntroText">  <!--Basic Intro Info-->
@@ -29,25 +26,15 @@
                     </div>
                     <div class="music" onclick="PlayMusic()"><i class="fa fa-volume-up fa-lg" aria-hidden="true"></i></div>
                     <div class="hide">If you couldn't tell The Batman is my current 
-                        fav movie! Click to play and pause! </div>
+                        fav movie! Click to play and pause! Reload for quote</div>
                     <div id="hideme">  <!--Used to hide the default audio control settings-->
                         <audio controls id="mus">
                             <source src="Sounds/Batman.mp3">
                         </audio>
-                         <!--Used .js to onlick pause and play background song -->
-                            <script type="text/javascript">
-                                function PlayMusic(){
-                                    var myAudio = document.getElementById("mus");
-                                    myAudio.controls = false;
-                                    if(myAudio.paused) {
-                                        myAudio.play();
-                                    }
-                                    else {
-                                        myAudio.pause();
-                                    }
-                                }
-                            </script>  
                         </div>
+                    <div id="Quotes">
+                            <script src="main.js"></script>
+                    </div>
                     <div id="NavBar">
                         <nav>
                             <a href="#sec-2"><img src="Images/DownArrow.svg"style="width:25px; height:25px;"/></a>
@@ -64,38 +51,35 @@
                 </i></div>
                 <div class="content">
                     <h3>About Me</h3>
-                    <p1>Hello World! My name is Usman, but everyone calls me Uzi. I am a second year student 
+                    <p>Hello World! My name is Usman, but everyone calls me Uzi. I am a second year student 
                         studying Computer Engineering with an intention of concentrating in Technology Innovation and/or 
                         Machine Learning at Boston University. I have been programing since my junior year of high school where I took AP C.S. 
                         Everyday I look forward towards honing the necessary experience towards 
                         becoming a better software engineer. I plan on becoming a better 
                         critical thinker as well as an effective team member in technical projects. I am currently studying abroad in Sydney, 
                         Australia attending the University of Sydney. Alongside, I am interning as a software engineer @ Livelo: Your Global Bike. 
-                    </p1>
+                    </p>
                 </div>
             </div>
        </div>
        <div class="container-2">
             <div class="box-2">
-                <div class="icon"><i class="fa fa-superpowers" aria-hidden="true">
-                </i></div>
+                <div class="icon"><i class="fa fa-superpowers" aria-hidden="true"></i></div>
                 <div class="content">
                     <h3>My Skills</h3>
-                    <p1> As a programmer, I have experience in creating applications with the following langauges/technologies: </p1>
+                    <p> As a programmer, I have experience in creating applications with the following langauges/technologies: </p>
                     <ul style="list-style: none;">
-                        <li>C/C++</li>
+                        <li>&nbsp&nbspC/C++</li>
                         <li>Java</li>
                         <li>Python</li>
                         <li>HTML/CSS</li>
                         <li>Javascript</li>
-                        <li>Git</li>
-                        
+                        <li>Git</li> 
                     </ul>
                 </div>
             </div>
             <div class="box-2">
-                <div class="icon"><i class="fa fa-book" aria-hidden="true">
-                </i></div>
+                <div class="icon"><i class="fa fa-book" aria-hidden="true"></i></div>
                 <div class="content-2">
                     <h3>Relevent Coursework</h3>
                     <ul style="list-style: none;">
@@ -116,63 +100,59 @@
        </div>
        <div class="container-3">
            <div class="box-3">
-                <div class="icon"><i class="fa fa-briefcase" aria-hidden="true">
-                </i></div>
+                <div class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
                 <div class="content-3">
                     <h3>View my Projects</h3>
-                    <p1>Over the years, I have worked on a multitude of projects. A few of them can be seen by hovering over the boxes! However, most of my projects can be directly accessed on my github!</p1>
+                    <p>Over the years, I have worked on a multitude of projects. A few of them can be seen by hovering over the boxes! However, most of my projects can be directly accessed on my github!</p>
                         <div class="btn">
                          <a href="https://github.com/ujalil101"><span></span><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
                         </div>
                 </div>
            </div>
            <div class="box-3">
-            <div class="icon"><i class="fa fa-medkit" aria-hidden="true">
-            </i></div>
-            <div class="content-4">
-                <h3>Covid OutBreak Game</h3>
-                <p1>Developed a C++ game about the COVID-19 pandemic using OOP by creating various objects located in a 2D-grid that move in ways controlled by the user</p1>
-                <ul style="list-style: none;">
-                    <li>Additional info can be seen by <span class="link" onmouseenter="displayImg('Images/Game.png',this);" onmouseout="removeImg();">hovering</span> and/or clicking the icon.</li>
-                </ul>
-                    <div class="btn">
-                        <a href="https://github.com/ujalil101/Covid-OutBreak-Game"><span></span><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                   </div>
-                   
-            </div> 
-            </div>
-            <div class="box-3">
-                <div class="icon"><i class="fa fa-users" aria-hidden="true">
-                </i></div>
-                <div class="content-5">
-                    <h3>Cubbies</h3>
-                    <p1>Prototyped a python mobile application using the Kivy framework aimed to connect students in the same classes who are virtual due to COVID-19.
-                    </p1>
-                    <div class="myDIV">Additional info can be seen by hovering and/or clicking the icons.</div>
-                       <div class="hide">Fun Fact: this project won best use of DataStax Astra in UniHacks 2020 Hackathon!</div>
-                        <div class="btn">
-                            <a href="https://github.com/CJByrne44/CT-Boys-Submission"><span></span><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                            <a href="https://drive.google.com/file/d/10YoTI1AoL6nE5rqpHpkOxzFTJOz1LYJb/view?usp=sharing"><span></span><i class="fa fa-play fa-lg" aria-hidden="true"></i></a>
-                       </div>
-                </div> 
+                <div class="icon"><i class="fa fa-medkit" aria-hidden="true"></i></div>
+                    <div class="content-4">
+                        <h3>Covid OutBreak Game</h3>
+                        <p>Developed a C++ game about the COVID-19 pandemic using OOP by creating various objects located in a 2D-grid that move in ways controlled by the user</p>
+                        <ul style="list-style: none;">
+                            <li>Additional info can be seen by <span class="link" onmouseenter="displayImg('Images/Game.png',this);" onmouseout="removeImg();">hovering</span> and/or clicking the icon.</li>
+                        </ul>
+                            <div class="btn">
+                                <a href="https://github.com/ujalil101/Covid-OutBreak-Game"><span></span><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                            </div>
+                    </div> 
                 </div>
-        </div>
+            <div class="box-3">
+                <div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                    <div class="content-5">
+                        <h3>Cubbies</h3>
+                        <p>Prototyped a python mobile application using the Kivy framework aimed to connect students in the same classes who are virtual due to COVID-19.</p>
+                            <div class="myDIV">Additional info can be seen by <strong><em>hovering</em> </strong>and/or clicking the icons.</div>
+                            <div class="hide">Fun Fact: this project won best use of DataStax Astra in UniHacks 2020 Hackathon!</div>
+                                <div class="btn">
+                                    <a href="https://github.com/CJByrne44/CT-Boys-Submission"><span></span><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                                    <a href="https://drive.google.com/file/d/10YoTI1AoL6nE5rqpHpkOxzFTJOz1LYJb/view?usp=sharing"><span></span><i class="fa fa-play fa-lg" aria-hidden="true"></i></a>
+                                </div>
+                    </div> 
+                </div>
+            </div>
         <div class="container-4">
             <div class="box-4">
                 <div class="icon"><i class="fa fa-question-circle-o" aria-hidden="true"></i></div>
-                <div class="content-6">
-                    <h1>Questions?</h1>
-                    <p1>If you have any questions, please do not hesitate to reach out. Whether it is about my work or even personal, send me an email; I am always looking forward to answering questions or even connecting with others!</p1>
-                        <div class="btn">
-                            <a href="mailto:ujalil929@gmail.com"><span></span><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
-                            <a href="https://www.linkedin.com/in/usman-jalil-309500201/"><span></span><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
-                       </div>
-                </div>
+                    <div class="content-6">
+                        <h1>Questions?</h1>
+                        <p>If you have any questions, please do not hesitate to reach out. Whether it is about my work or even personal, send me an email; I am always looking forward to answering questions or even connecting with others!</p>
+                            <div class="btn">
+                                <a href="mailto:ujalil929@gmail.com"><span></span><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/usman-jalil-309500201/"><span></span><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+                            </div>
+                    </div>
             </div>
-            <div class="bottom">
-                <p>© 2022 Usman Jalil</p>
-              </div>
         </div>
+        <div class="container-5">
+            <footer>© 2022 Usman Jalil</footer>
+          </div>
+          
     </section>
     </body>
 </html>
