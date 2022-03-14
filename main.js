@@ -1,7 +1,6 @@
-/* .js script to make image pop while hovering over text*/
+/* Makes image pop while hovering over text*/
 const body = document.querySelector('body');
 const imgContainer = document.createElement('div');
-
 function displayImg(imgUrl, elt) {
     body.appendChild(imgContainer);
     imgContainer.innerHTML= `<img src='${imgUrl}'>`;
@@ -10,6 +9,7 @@ function displayImg(imgUrl, elt) {
     imgContainer.style.left = (elt.offsetLeft + 50) + 'px';
     imgContainer.style.animation = 'fadeIn. 4s';
 }
+/* Makes image disappear when not hovering over text*/
 function removeImg() {
     imgContainer.style.animation = 'fadeOut. 4s';
     
@@ -17,7 +17,7 @@ function removeImg() {
         body.removeChild(imgContainer);
     }, 750);
 }
-/* .js script to play/pause background music*/
+/* Play/pause background music*/
 var myAudio = document.getElementById("mus");
 function PlayMusic(){
     myAudio.controls = false;
@@ -28,7 +28,7 @@ function PlayMusic(){
         myAudio.pause();
     }
 }
-/* .js script to generate a different quote when loaded */
+/* Generates a different quote when loaded */
 const Output = document.getElementById("Quotes");
 function ShowQuote()
   {
@@ -56,16 +56,16 @@ function ShowQuote()
         '“It\’s not who I am underneath, but what I do that defines me." — Batman' ,
         '"I am not in danger, Skyler. I am the danger. A guy opens his door and gets shot, and you think that of me? No! I am the one who knocks!" - Walter White' ,
         '"I did it for me. I liked it. I was good at it. And I was really — I was alive." - Walter White',
-        '"You\'re goddamn right" - Heisenburg'
+        '"You\'re goddamn right" - Heisenburg' ,
+        '"To them, you\'re  just a freak, like me! They need you right now, but when  they don\'t, they\'ll cast you out, like a leper!" - The Joker'
     ];
     var random_pick = Math.floor(Math.random() * (quotes.length));
     document.write(quotes[random_pick]);
   }
-  
 Output.addEventListener("load", ShowQuote());
-
-/*Makes quote disappear after 6 seconds! */ 
+/* Makes quote disappear after 6 seconds! */ 
 setTimeout(() => {
     Output.style.display = 'none';
   }, 6000);
+
 
