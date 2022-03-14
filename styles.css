@@ -71,8 +71,8 @@ body {
 .Buttons {
     margin: 20px;
     text-align: center;
-    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0) brightness(1000%) contrast(1000%);  /*Changed color of github svg link to white
-    https://codepen.io/sosuke/pen/Pjoqqp*/
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0) brightness(1000%) contrast(1000%);  
+    /*Changed color of github svg link to white using https://codepen.io/sosuke/pen/Pjoqqp*/
 }
 .Buttons a { 
     margin: 20px;
@@ -120,10 +120,9 @@ body {
     display: flex;
 
 }
-/* hides audio display*/
+/* hides the audio display*/
 #hideme {
     display: none;
-    
 }
 #Quotes {
     font-size: 20px;
@@ -172,7 +171,6 @@ body {
     text-align: center;
     box-sizing: border-box;
     border-radius: 8px;
-    
  }
  .container .box .icon {
     position: absolute;
