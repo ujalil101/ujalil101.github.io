@@ -1,1 +1,1 @@
-Just a simple personalized website created using Html and CSS.
+Just a simple personalized website created using Html, CSS, and Javascript.
