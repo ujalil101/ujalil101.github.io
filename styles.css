@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: "Saira Condensed", sans-serif;
 }
 
 body {
     background-color: #121212;
     color: #ffffff;
-    font-family: 'Arial', sans-serif;
+    font-family: "Arial", sans-serif;
 }
 
 /* Loading Screen */
@@ -23,26 +23,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000; 
-    transition: opacity 0.5s ease-out; 
+    z-index: 1000;
+    transition: opacity 0.5s ease-out;
 }
 
 .loading-icon {
     font-size: 3rem;
     color: #ffffff;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.fa-spin {
-    animation: spin 1s linear infinite; 
 }
 
 /* Header */
@@ -112,55 +99,44 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #121212; 
+    background-color: #121212;
     padding: 20px;
 }
 
 .hero-content {
     color: #ffffff;
-    padding: 0; 
+    padding: 0;
 }
 
 .name {
-    font-size: 5rem; 
-    font-weight: 700; 
-    margin-bottom: 20px; 
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .credentials {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.5;
 }
 
 /* Social Icons */
 .socials {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .social-icon {
     display: inline-block;
-    margin: 0 15px; 
-    font-size: 24px; 
-    color: #ffffff; 
+    margin: 0 15px;
+    font-size: 24px;
+    color: #ffffff;
     transition: transform 0.3s, color 0.3s;
 }
 
 .social-icon:hover {
     transform: scale(1.2);
-    color: #bb86fc; 
+    color: #bb86fc;
 }
-
-@media (max-width: 768px) {
-    .name {
-        font-size: 3rem;
-    }
-
-    .credentials {
-        font-size: 1rem;
-    }
-}
-
 
 /* Projects Section */
 .projects {
@@ -190,8 +166,8 @@ nav a:hover {
     animation: fadeIn 1s ease-in-out;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
-    height: 100%; 
+    justify-content: space-between;
+    height: 100%;
 }
 
 .project-card:hover {
@@ -210,7 +186,7 @@ nav a:hover {
 }
 
 .project-card em {
-    font-size: .95rem;
+    font-size: 0.95rem;
     margin-bottom: 15px;
 }
 
@@ -220,7 +196,6 @@ nav a:hover {
 }
 
 .project-card span::before {
-    
     margin-right: 8px;
 }
 
@@ -233,7 +208,7 @@ nav a:hover {
 }
 
 .skills i {
-    font-size: 3rem; 
+    font-size: 3rem;
 }
 
 /* Learn more Section */
@@ -272,7 +247,7 @@ nav a:hover {
     align-items: center;
     overflow: hidden;
     position: relative;
-    height: 200px; 
+    height: 200px;
 }
 
 .skills-wrapper {
@@ -288,16 +263,6 @@ nav a:hover {
     margin: 0 15px;
 }
 
-@keyframes rotate {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-
 /* Footer */
 .footer {
     padding: 20px;
@@ -307,12 +272,12 @@ nav a:hover {
     font-size: 0.875rem;
 }
 
-
 /* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -323,8 +288,75 @@ nav a:hover {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive Style */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .menu-icon {
+        font-size: 20px;
+        top: 10px;
+        right: 10px;
+    }
+
+    nav {
+        top: 10px;
+        right: 40px;
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 0.875rem;
+        padding: 8px;
+        margin: 0 2px;
+    }
+
+    /* Hero section */
+    .hero {
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .credentials {
+        font-size: 1rem;
+    }
+
+    /* project section */
+    .projects {
+        padding: 50px 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-card p,
+    .project-card em,
+    .project-card span {
+        font-size: 0.875rem;
+    }
+
+    /* Skills section */
+    .skills-container {
+        height: 150px;
+    }
+
+    .skills-wrapper i {
+        font-size: 2rem;
     }
 }
